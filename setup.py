@@ -5,7 +5,7 @@ import pkg_resources
 # pipreqs ./vlc_controller
 
 # https://stackoverflow.com/a/59971469
-with pathlib.Path('./viziocontroller/requirements.txt').open() as requirements_txt:
+with pathlib.Path('./vlc_controller/requirements.txt').open() as requirements_txt:
 	install_requires = [
 		str(requirement)
 		for requirement
