@@ -14,11 +14,11 @@ with pathlib.Path('./vlc_controller/requirements.txt').open() as requirements_tx
 
 setuptools.setup(
 	name="vlc_controller",
-	version="0.0.1",
+	version="0.0.2",
 	author="7435171",
 	author_email="48723247842@protonmail.com",
 	description="VLC Controller",
-	url="https://github.com/48723247842/VizioController",
+	url="https://github.com/48723247842/VLCController",
 	packages=setuptools.find_packages() ,
 	classifiers=[
 		"Programming Language :: Python :: 3",
