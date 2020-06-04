@@ -92,11 +92,11 @@ class VLCController:
 			final_status = {}
 			for index , line in enumerate( status ):
 				if line.find( "new input:" ) > -1:
-					final_status["file_path"] = line.split( "new input: " )[ 1 ].strip()[:-2]
+					final_status["file_path"] = line.split( "new input: " )[ 1 ].strip()[ :-2 ]
 				elif line.find( "volume:" ) > -1:
-					final_status["volume"] = line.split( "volume: " )[ 1 ].strip()
+					final_status["volume"] = line.split( "volume: " )[ 1 ].strip()[ :-2 ]
 				elif line.find( "state" ) > -1:
-					final_status["state"] = line.split( "state " )[ 1 ].strip()
+					final_status["state"] = line.split( "state " )[ 1 ].strip()[ :-2 ]
 			return final_status
 		except Exception as e:
 			print( e )

@@ -8,6 +8,8 @@ RestartSec=20
 User=morphs
 Environment="DISPLAY=:0"
 ExecStart=/usr/bin/vlc --intf telnet --telnet-password admin
+ExecReload=/usr/bin/pkill -9 vlc
+ExecStop=/usr/bin/pkill -9 vlc
 Restart=always
 
 [Install]
