@@ -14,7 +14,7 @@ with pathlib.Path('./vlc_controller/requirements.txt').open() as requirements_tx
 
 setuptools.setup(
 	name="vlc_controller",
-	version="0.0.4",
+	version="0.0.5",
 	author="7435171",
 	author_email="48723247842@protonmail.com",
 	description="VLC Controller",
