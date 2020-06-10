@@ -139,7 +139,7 @@ class VLCController:
 			current_time = self.get_time()
 			status = self.status()
 			info = self.info()
-			duration = self.run_command( "get_length" )
+			duration = self.send_command( "get_length" )
 			return { **status , **info , "current_time": current_time , "duration": duration }
 		except Exception as e:
 			print( e )
